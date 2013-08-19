@@ -1,0 +1,38 @@
+1: Timer setup
+	- allow user to set timer, start timer, have the timer count down
+	- timer should minimise self after 5 (arbitrary amount) seconds and regain focus when the timer goes off
+
+	- give user option of a few presets
+	- ask for task
+
+2: Timer cancel
+	- user may cancel a timer in progress
+	- cancelling a timer prompts the user to input a reason
+	- aside from this, timers may not be paused
+
+3: Timeout
+	- after the timer runs down, ask user whether they're still doing the given task
+
+4: Set up database
+	- data about timers should be stored in a database. Need to store:
+		- date and time of timer start
+		- duration
+		- whether the timer was cancelled or was allowed to run down
+		- if cancelled, what the reason was
+		- if allowed to run down, whether user was still working or not
+
+5: Database viewing
+	- set up viewing for database information
+	- prominantly display success vs failure, and premature cancellations
+	
+	- Need to design the interface for this
+
+Optional tasks:
+
+1: Database statistics
+	- for example, success rate, cancellation rate, average duration, etc.
+
+2: Support for multiple users
+	- store data in separate files for each user? or something else
+	
+3: If multiple users is supported, should implement user authentication as well
