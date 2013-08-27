@@ -1,3 +1,4 @@
+Completed:
 1: Timer setup
 	- allow user to set timer, start timer, have the timer count down
 	- timer should minimise self after 5 (arbitrary amount) seconds and regain focus when the timer goes off
@@ -23,16 +24,20 @@
 
 5: Database viewing
 	- set up viewing for database information
-	- prominantly display success vs failure, and premature cancellations
-	
+	- prominantly display success vs failure, and premature cancellations	
 	- Need to design the interface for this
+
+Optional tasks:
+
+2: Support for multiple users
+	- store data in separate files for each user? or something else
+	
+3: If multiple users is supported, should implement user authentication as well
+
+Still TODO:
 
 Optional tasks:
 
 1: Database statistics
 	- for example, success rate, cancellation rate, average duration, etc.
 
-2: Support for multiple users
-	- store data in separate files for each user? or something else
-	
-3: If multiple users is supported, should implement user authentication as well
