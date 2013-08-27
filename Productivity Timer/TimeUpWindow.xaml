@@ -1,0 +1,26 @@
+﻿<Window x:Class="Productivity_Timer.TimeUpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TimeUpWindow" Height="371.9" Width="618">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="527"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="47"/>
+            <RowDefinition Height="41"/>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="191*"/>
+            <RowDefinition Height="34"/>
+        </Grid.RowDefinitions>
+        <Label Content="Did you complete your task?" HorizontalAlignment="Left" Height="27" Margin="10,10,0,0" VerticalAlignment="Top" Width="590" Grid.ColumnSpan="2"/>
+        <RadioButton x:Name="YesButton" Content="RadioButton" HorizontalAlignment="Left" Height="21" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="12" Click="YesButton_Click"/>
+        <Label Content="Yes" HorizontalAlignment="Left" Height="26" Margin="27,5,0,0" Grid.Row="1" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.583,-1.095"/>
+        <RadioButton x:Name="NoButton" Content="RadioButton" HorizontalAlignment="Left" Margin="10,10,0,5" Grid.Row="2" Width="12" RenderTransformOrigin="0.583,-2.214" Click="NoButton_Click"/>
+        <Label Content="No, because:" HorizontalAlignment="Left" Height="26" Margin="27,5,0,0" Grid.Row="2" VerticalAlignment="Top" Width="152" Grid.RowSpan="2"/>
+        <TextBox x:Name="reasonBox" HorizontalAlignment="Left" Height="181" Margin="10,5,0,0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top" Width="590" Grid.ColumnSpan="2"/>
+        <Button x:Name="OKButton" Content="OK" HorizontalAlignment="Left" Height="24" Margin="14,0,0,0" Grid.Row="4" VerticalAlignment="Top" Width="59" Grid.Column="1" Click="OKButton_Click"/>
+
+    </Grid>
+</Window>

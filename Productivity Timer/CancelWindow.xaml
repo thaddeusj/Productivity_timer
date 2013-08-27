@@ -1,0 +1,10 @@
+﻿<Window x:Class="Productivity_Timer.CancelWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Window1" Height="300" Width="704">
+    <Grid>
+        <TextBox x:Name="cancelText" HorizontalAlignment="Left" Height="219" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="676"/>
+        <Button x:Name="okButton" Content="OK" HorizontalAlignment="Left" Height="26" Margin="631,234,0,0" VerticalAlignment="Top" Width="55" Click="okButton_Click"/>
+
+    </Grid>
+</Window>
