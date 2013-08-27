@@ -221,9 +221,9 @@ namespace Productivity_Timer
 
 
                     Database1TimerstuffTableAdapters.TimerInfoTableAdapter ad = new Database1TimerstuffTableAdapters.TimerInfoTableAdapter();
-                    ad.Connection = new System.Data.SqlServerCe.SqlCeConnection("Data Source=\"C:\\Users\\Thad\\Documents\\Programming Practice\\Productivity Timer\\Productivity Timer\\Database1.sdf\"");
+                    ad.Connection = new System.Data.SqlServerCe.SqlCeConnection(Properties.Settings.Default.Database1ConnectionString1);
                     Database1TimerstuffTableAdapters.TimerInfo1TableAdapter ad1 = new Database1TimerstuffTableAdapters.TimerInfo1TableAdapter();
-                    ad1.Connection = new SqlCeConnection("Data Source=\"C:\\Users\\Thad\\Documents\\Programming Practice\\Productivity Timer\\Productivity Timer\\Database1.sdf\"");
+                    ad1.Connection = new SqlCeConnection(Properties.Settings.Default.Database1ConnectionString1);
 
                     
                     TimeSpan tspan = new TimeSpan(Hours, Minutes, Seconds);
@@ -340,10 +340,10 @@ namespace Productivity_Timer
             {
                 Database1TimerstuffTableAdapters.TimerInfoTableAdapter ad = new Database1TimerstuffTableAdapters.TimerInfoTableAdapter();
                 Database1TimerstuffTableAdapters.TimerInfo1TableAdapter ad1 = new Database1TimerstuffTableAdapters.TimerInfo1TableAdapter();
-                ad.Connection = new SqlCeConnection("Data Source=\"C:\\Users\\Thad\\Documents\\Programming Practice\\Productivity Timer\\Productivity Timer\\Database1.sdf\"");
-                ad1.Connection = new SqlCeConnection("Data Source=\"C:\\Users\\Thad\\Documents\\Programming Practice\\Productivity Timer\\Productivity Timer\\Database1.sdf\"");
-           
+                ad.Connection = new SqlCeConnection(Properties.Settings.Default.Database1ConnectionString1);
+                ad1.Connection = new SqlCeConnection(Properties.Settings.Default.Database1ConnectionString1);
 
+                //"Data Source=\"C:\\Users\\Thad\\Documents\\Programming Practice\\Productivity Timer\\Productivity Timer\\Database1.sdf\""
 
                 TimeSpan tspan = new TimeSpan(HoursToGo, MinutesToGo, SecondsToGo);
                 TimeSpan elapsedtspan = new TimeSpan(Hours, Minutes, Seconds);
@@ -381,9 +381,9 @@ namespace Productivity_Timer
 
                     dataset = new Database1Timerstuff();
                     Database1TimerstuffTableAdapters.TimerInfo1TableAdapter ad1 = new Database1TimerstuffTableAdapters.TimerInfo1TableAdapter();
-                    ad1.Connection = new SqlCeConnection("Data Source=\"C:\\Users\\Thad\\Documents\\Programming Practice\\Productivity Timer\\Productivity Timer\\Database1.sdf\"");
+                    ad1.Connection = new SqlCeConnection(Properties.Settings.Default.Database1ConnectionString1);
                     Database1TimerstuffTableAdapters.TimerInfoTableAdapter ad = new Database1TimerstuffTableAdapters.TimerInfoTableAdapter();
-                    ad.Connection = new SqlCeConnection("Data Source=\"C:\\Users\\Thad\\Documents\\Programming Practice\\Productivity Timer\\Productivity Timer\\Database1.sdf\"");
+                    ad.Connection = new SqlCeConnection(Properties.Settings.Default.Database1ConnectionString1);
 
                     ad.FillByUser(dataset.TimerInfo, User);
                     ad1.Fill(dataset.TimerInfo1,User);

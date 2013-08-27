@@ -39,7 +39,9 @@ namespace Productivity_Timer
 
 
             Database1TimerstuffTableAdapters.UserInfoTableAdapter ad = new Database1TimerstuffTableAdapters.UserInfoTableAdapter();
-            ad.Connection = new SqlCeConnection("Data Source=\"C:\\Users\\Thad\\Documents\\Programming Practice\\Productivity Timer\\Productivity Timer\\Database1.sdf\"");
+            ad.Connection = new SqlCeConnection(Properties.Settings.Default.Database1ConnectionString1);
+
+            //"Data Source=\"C:\\Users\\Thad\\Documents\\Programming Practice\\Productivity Timer\\Productivity Timer\\Database1.sdf\""
 
             Database1Timerstuff timerstuff = new Database1Timerstuff();
             ad.Fill(timerstuff.UserInfo);
