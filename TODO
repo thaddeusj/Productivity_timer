@@ -40,4 +40,6 @@ Optional tasks:
 
 1: Database statistics
 	- for example, success rate, cancellation rate, average duration, etc.
+	
+2: Include a progress bar.
 
